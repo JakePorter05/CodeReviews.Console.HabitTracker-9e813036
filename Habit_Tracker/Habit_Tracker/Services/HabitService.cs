@@ -15,7 +15,7 @@ public class HabitService
         HabitType= type;
     }
 
-    int DisplayHabits()
+    void DisplayHabits()
     {
         var habits = HabitRepository.GetHabitsByTypeId(HabitType!.Id);
         
@@ -30,8 +30,6 @@ public class HabitService
         }
         
         AnsiConsole.Write(table);
-
-        return habits.Count();
     }
 
     internal void DisplayHabitProcess()
