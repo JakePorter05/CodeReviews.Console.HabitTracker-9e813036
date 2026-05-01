@@ -35,7 +35,7 @@ public class HabitTypeService
         Console.Clear();
         Console.WriteLine("What Habit type do you want to interact with?");
 
-        var count = DisplayHabitTypes();
+        DisplayHabitTypes();
         var id = Console.ReadLine();
         var habitType = ValidateHabitType(id);
         while (habitType == null)
@@ -151,7 +151,7 @@ public class HabitTypeService
         Console.Clear();
         Console.WriteLine("What Habit type do you want to delete?");
 
-        var count = DisplayHabitTypes();
+        DisplayHabitTypes();
 
         Console.WriteLine("Please enter the id of the habit you want to delete, or just hit enter to return.");
         var id = Console.ReadLine();
